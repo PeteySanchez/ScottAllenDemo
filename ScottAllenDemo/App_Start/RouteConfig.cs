@@ -13,6 +13,11 @@ namespace ScottAllenDemo
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            // /Cuisine/french
+            routes.MapRoute("Cuisine",
+                "cuisine/{name}",
+                new { Controller = "Cuisine", action = "Search", name = UrlParameter.Optional });
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
