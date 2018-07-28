@@ -11,9 +11,9 @@ namespace ScottAllenDemo.Controllers
         // GET: Cuisine
         public ActionResult Search(String name)
         {
-            var massage = Server.HtmlEncode(name);
+            var message = Server.HtmlEncode(name);
 
-            return Content("Hello");
+            return RedirectToAction("Index", "Home", new { name = name });
         }
     }
 }
