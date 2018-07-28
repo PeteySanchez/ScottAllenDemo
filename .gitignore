@@ -1,0 +1,13 @@
+*.dll
+*.pdb
+*.cache
+*.suo
+packages
+Web.MyTonikSpace/node_modules
+Web.MyTonikSpace/dist
+**/bin
+**/obj
+Web.MyTonikSpace/App_Start/Assets
+*.ide
+.vs/*
+tools/*
