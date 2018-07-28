@@ -9,11 +9,12 @@ namespace ScottAllenDemo.Controllers
     public class CuisineController : Controller
     {
         // GET: Cuisine
+        [Authorize]
         public ActionResult Search(String name)
         {
             var message = Server.HtmlEncode(name);
 
-            return RedirectToAction("Index", "Home", new { name = name });
+            return Content(message);
         }
     }
 }
