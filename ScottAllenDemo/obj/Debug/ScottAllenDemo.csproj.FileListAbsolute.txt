@@ -180,3 +180,7 @@ C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.csproj.Core
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.csproj.CopyComplete
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.dll
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.pdb
+C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.dll
+C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.SqlServer.dll
+C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.xml
+C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.SqlServer.xml
