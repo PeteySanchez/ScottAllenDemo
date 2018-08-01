@@ -34,3 +34,5 @@ C:\_src\Personal\ScottAllenDemo\ScottAllenDemo.Tests\obj\Debug\ScottAllenDemo.Te
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo.Tests\obj\Debug\ScottAllenDemo.Tests.csproj.CopyComplete
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo.Tests\obj\Debug\ScottAllenDemo.Tests.dll
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo.Tests\obj\Debug\ScottAllenDemo.Tests.pdb
+C:\_src\Personal\ScottAllenDemo\ScottAllenDemo.Tests\bin\Debug\EntityFramework.dll
+C:\_src\Personal\ScottAllenDemo\ScottAllenDemo.Tests\bin\Debug\EntityFramework.xml

@@ -84,7 +84,6 @@ C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\Microsoft.AI.DependencyCollec
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\Microsoft.AI.WindowsServer.xml
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\Microsoft.AI.Web.xml
-C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.csprojResolveAssemblyReference.cache
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.csproj.CoreCompileInputs.cache
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.csproj.CopyComplete
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.dll
@@ -183,3 +182,7 @@ C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.dll
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.SqlServer.dll
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.xml
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.SqlServer.xml
+C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.dll
+C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.SqlServer.dll
+C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.xml
+C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.SqlServer.xml
