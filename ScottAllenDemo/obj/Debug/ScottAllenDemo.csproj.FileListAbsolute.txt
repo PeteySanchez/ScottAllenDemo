@@ -186,3 +186,4 @@ C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.dll
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.SqlServer.dll
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.xml
 C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\bin\EntityFramework.SqlServer.xml
+C:\_src\Personal\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.csprojResolveAssemblyReference.cache

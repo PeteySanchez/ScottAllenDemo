@@ -1,16 +1,6 @@
-﻿@model IEnumerable<ScottAllenDemo.Models.Restaurant>
-
-@{
+﻿@{
     ViewBag.Title = "Home Page";
 }
 
-@foreach (var item in Model)
-{
-    <div>
-        <h4>Restaurant: @item.Name</h4>
-        <div>@item.City, @item.Country</div>
-        <hr />
-    </div>
-    
-}
+<h3>@ViewBag.Message</h3>
 
