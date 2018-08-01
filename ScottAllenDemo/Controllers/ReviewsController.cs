@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-﻿using System;
-=======
 ﻿using ScottAllenDemo.Models;
 using System;
->>>>>>> 3054eea5984e26d57b9e46a36e6ac1181a5a8c1c
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,13 +12,10 @@ namespace ScottAllenDemo.Controllers
         // GET: Reviews
         public ActionResult Index()
         {
-<<<<<<< HEAD
-            return View();
-=======
+
             var model = reviews.OrderBy(r => r.Country);
 
             return View(model);
->>>>>>> 3054eea5984e26d57b9e46a36e6ac1181a5a8c1c
         }
 
         // GET: Reviews/Details/5
@@ -96,8 +89,6 @@ namespace ScottAllenDemo.Controllers
                 return View();
             }
         }
-<<<<<<< HEAD
-=======
 
         static List<RestaurantReview> reviews = new List<RestaurantReview>
         {
@@ -126,6 +117,5 @@ namespace ScottAllenDemo.Controllers
                 Rating = 10
             },
         };
->>>>>>> 3054eea5984e26d57b9e46a36e6ac1181a5a8c1c
     }
 }
