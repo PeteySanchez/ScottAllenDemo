@@ -36,5 +36,14 @@ namespace ScottAllenDemo.Controllers
 
             return View();
         }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (scottDb != null)
+            {
+                scottDb.Dispose();
+            }
+            base.Dispose(disposing);
+        }
     }
 }
