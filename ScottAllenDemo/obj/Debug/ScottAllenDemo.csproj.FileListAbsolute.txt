@@ -175,7 +175,6 @@ C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\Microsoft.AI.DependencyCollector
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\Microsoft.AI.WindowsServer.xml
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\bin\Microsoft.AI.Web.xml
-C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.csprojResolveAssemblyReference.cache
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.csproj.CoreCompileInputs.cache
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.csproj.CopyComplete
 C:\_src\RETIG\ScottAllenDemo\ScottAllenDemo\obj\Debug\ScottAllenDemo.dll

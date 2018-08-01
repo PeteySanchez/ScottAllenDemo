@@ -1,6 +1,7 @@
 ﻿using ScottAllenDemo.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -9,113 +10,62 @@ namespace ScottAllenDemo.Controllers
 {
     public class ReviewsController : Controller
     {
+        private ScottDb db = new ScottDb();
         // GET: Reviews
-        public ActionResult Index()
+        public ActionResult Index([Bind(Prefix="Id")] int restaurantId)
         {
+            var restaurant = db.Restaurants.Find(restaurantId);
+            if (restaurant != null)
+            {
+                return View(restaurant);
+            }
+            return HttpNotFound();
+        }
 
-            var model = reviews.OrderBy(r => r.Country);
+        [HttpGet]
+        public ActionResult Create(int restaurantId)
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public ActionResult Create(RestaurantReview review)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Reviews.Add(review);
+                db.SaveChanges();
+                return RedirectToAction("Index", new { id = review.Id });
+            }
+            return View(review);
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var model = db.Reviews.Find(id);
             return View(model);
         }
 
-        // GET: Reviews/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: Reviews/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Reviews/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Edit(RestaurantReview review)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                db.Entry(review).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index", new { id = review.Id });
             }
-            catch
-            {
-                return View();
-            }
+            return View(review);
         }
 
-        // GET: Reviews/Edit/5
-        public ActionResult Edit(int id)
+        protected override void Dispose(bool disposing)
         {
-            return View();
-        }
-
-        // POST: Reviews/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
+            if (disposing)
             {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
+                db.Dispose();
             }
-            catch
-            {
-                return View();
-            }
+            base.Dispose(disposing);
         }
-
-        // GET: Reviews/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Reviews/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        static List<RestaurantReview> reviews = new List<RestaurantReview>
-        {
-            new RestaurantReview
-            {
-                Id = 1,
-                Name = "Cinnamon Club",
-                City = "London",
-                Country = "UK",
-                Rating = 10
-            },
-            new RestaurantReview
-            {
-                Id = 2,
-                Name = "Marrakesh",
-                City = "D.C.",
-                Country = "USA",
-                Rating = 10
-            },
-            new RestaurantReview
-            {
-                Id = 3,
-                Name = "The House of Elliot",
-                City = "Ghent",
-                Country = "Belgium",
-                Rating = 10
-            },
-        };
     }
 }
